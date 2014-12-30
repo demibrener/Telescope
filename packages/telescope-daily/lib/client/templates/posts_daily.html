@@ -2,16 +2,14 @@
   {{#if postsLoaded}}
     <div class="grid">
       {{#each days}}
-        <h2 class="posts-day-heading">{{formatDate date "dddd, MMMM Do YYYY"}}</h2>
-        <div class="posts-wrapper posts-day posts list grid-module">
-          {{#if posts}}
+        {{#if posts}}
+          <h2 class="posts-day-heading">{{formatDate date "dddd, MMMM Do YYYY"}}</h2>
+          <div class="posts-wrapper posts-day posts list grid-module">
             {{#each posts}}
               {{> UI.dynamic template=post_item}}
             {{/each}}
-          {{else}}
-            <p class="empty-day-notice">Sorry, no posts for that day.</p>
-          {{/if}}
-        </div>
+          </div>
+        {{/if}}
       {{/each}}
       <a class="more-button grid-module" href="{{loadMoreUrl}}"><span>{{_ "load_more"}}</span></a>
     </div>

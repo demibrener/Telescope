@@ -1,4 +1,4 @@
-var daysPerPage = 5;
+var daysPerPage = 10;
 
 var getPosts = function (date) {
   var terms = {
