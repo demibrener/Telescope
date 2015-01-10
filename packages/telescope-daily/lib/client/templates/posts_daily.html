@@ -3,7 +3,7 @@
     <div class="grid">
       {{#each days}}
         {{#if posts}}
-          <h2 class="posts-day-heading">{{formatDate date "dddd, MMMM Do YYYY"}}</h2>
+          <span class="posts-day-bold">{{formatDate date "dddd"}}</span> <span class="posts-day-heading">{{formatDate date "MMMM Do"}}</span>
           <div class="posts-wrapper posts-day posts list grid-module">
             {{#each posts}}
               {{> UI.dynamic template=post_item}}

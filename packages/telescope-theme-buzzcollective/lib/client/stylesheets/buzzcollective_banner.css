@@ -1,7 +1,7 @@
 .newsletter-banner.newsletter-banner{
-  background: rgba(30,150,255,0.7);
+  background: #fffcea;
   margin-bottom: 10px;
-  padding: 20px;
+  padding: 17px;
   position: relative;
   overflow: hidden;
 }
@@ -10,7 +10,6 @@
   vertical-align: middle;
 }
 .newsletter-tagline{
-  font-weight: bold;
   margin-right: 5px;
   display: inline-block;
   vertical-align: middle;
@@ -37,13 +36,14 @@
 .newsletter-email.newsletter-email{
   display: inline-block;
   margin-right: 2px;
-  width: auto;
+  margin-left:100px;
+  width: 240px;
   vertical-align: middle;
-  border-color: rgba(0,0,0,0.5);
+  border-color: rgba(134,134,134,0.5);
   border-radius: 3px;
 }
 .button.buzzcollective-button{
-  background-color: rgb(100,100,255) !important;
+  background-color: #ff8808 !important;
   display: inline-block;
   float: none;
   vertical-align: middle;
