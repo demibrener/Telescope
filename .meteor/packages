@@ -68,7 +68,6 @@ telescope-tags
 telescope-theme-hubble
 telescope-email
 telescope-embedly
-telescope-newsletter
 telescope-daily
 telescope-update-prompt
 telescope-kadira
@@ -78,3 +77,4 @@ telescope-invites
 telescope-post-by-feed
 
 # Custom Packages
+telescope-theme-buzzcollective

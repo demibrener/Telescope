@@ -1,0 +1,3 @@
+	heroModules.push({
+	  template: 'buzzcollectiveBanner'
+	});
