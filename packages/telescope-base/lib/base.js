@@ -36,11 +36,35 @@ STATUS_REJECTED=3;
 
 // array containing nav items; initialize with views menu and admin menu
 primaryNav = ['adminMenu'];
+primaryNav = [
+  {
+    template: 'viewsMenu',
+    order: 10
+  },
+  {
+    template: 'adminMenu',
+    order: 20
+  }
+];
+b8f9cfd96fb421216f7e05d9c94aae5b9c21559a
 
-secondaryNav = ['userMenu', 'notificationsMenu', 'submitButton'];
+secondaryNav = [
+  {
+    template: 'userMenu', 
+    order: 10
+  },
+  {
+    template:'notificationsMenu',
+    order: 20
+  },
+  {
+    template: 'submitButton',
+    order: 30
+  }
+];
 
 // array containing items in the admin menu
-adminNav = [
+adminMenu = [
   {
     route: 'posts_pending',
     label: 'Pending',
@@ -60,16 +84,11 @@ adminNav = [
     route: 'settings',
     label: 'Settings',
     description: 'telescope_settings_panel'
-  },
-  {
-    route: 'toolbox',
-    label: 'Toolbox',
-    description: 'various_utilities'
   }
 ];
 
 // array containing items in the views menu
-viewNav = [
+viewsMenu = [
   {
     route: 'posts_top',
     label: 'top',
@@ -125,7 +144,7 @@ viewParameters.pending = function (terms) {
   return {
     find: {
       status: 1
-    }, 
+    },
     options: {sort: {createdAt: -1}},
     showFuture: true
   };
@@ -174,7 +193,7 @@ postModules = [
     order: 1
   },
   {
-    template: 'postContent', 
+    template: 'postContent',
     order: 5
   },
   {
@@ -199,7 +218,7 @@ postHeading = [
     order: 10
   },
   {
-    template: 'postDomain', 
+    template: 'postDomain',
     order: 20
   }
 ];
@@ -218,7 +237,7 @@ postMeta = [
     order: 30
   },
   {
-    template: 'postAdmin', 
+    template: 'postAdmin',
     order: 50
   }
 ]
@@ -237,7 +256,7 @@ commentSubmitClientCallbacks = [];
 commentSubmitMethodCallbacks = [];
 commentAfterSubmitMethodCallbacks = [];
 
-commentEditRenderedCallbacks = []; 
+commentEditRenderedCallbacks = [];
 commentEditClientCallbacks = [];
 commentEditMethodCallbacks = []; // not used yet
 commentAfterEditMethodCallbacks = []; // not used yet
@@ -261,13 +280,13 @@ userProfileDisplay = [
   {
     template: 'userUpvotedPosts',
     order: 3
-  },  
+  },
   {
-    template: 'userDownvotedPosts', 
+    template: 'userDownvotedPosts',
     order: 5
-  },  
+  },
   {
-    template: 'userComments', 
+    template: 'userComments',
     order: 5
   }
 ];
