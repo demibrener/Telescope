@@ -1,8 +1,9 @@
 Meteor.startup(function () {
   Router.map(function() {
     this.route('emails', {
-      path: '/emails',
-      template: getTemplate('emails')
+    	//name: 'emails',
+    	path: '/emails'
     });
   });
+  console.log("Hello client");
 });
