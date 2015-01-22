@@ -14,12 +14,12 @@ Package.onUse(function (api) {
 
   api.use(['templating'], ['client']);
 
-  api.addFiles(['lib/buzzcollective.js',
-    ], ['client', 'server']);
 
   api.addFiles(['lib/client/stylesheets/screen.scss',
     'lib/client/templates/buzzcollective_banner.html',
     'lib/client/stylesheets/buzzcollective_banner.css'
     ], ['client']);
+  api.addFiles(['lib/buzzcollective.js',
+    ], ['client', 'server']);
 
 });
