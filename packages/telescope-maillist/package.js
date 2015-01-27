@@ -1,7 +1,7 @@
 Package.describe({
   summary: "emails",
   version: '0.1.0',
-  name: "emails"
+  name: "telescope-maillist"
 });
 
 Package.onUse(function (api) {
@@ -22,7 +22,7 @@ Package.onUse(function (api) {
   api.add_files(['lib/client/templates/emails.html',
     'lib/client/stylesheets/emails.css'
     ], ['client']);
-  api.add_files(['lib/clients/templates/emails.js',
+  api.add_files(['lib/client/templates/emails.js',
     ], ['client', 'server']);
 
 });

@@ -1,4 +1,5 @@
 Meteor.startup(function () {
+  console.log("hola");
   Router.map(function() {
     this.route('emails', {
     	//name: 'emails',
