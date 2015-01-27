@@ -15,11 +15,14 @@ Package.onUse(function (api) {
 
   api.use(['templating'], ['client']);
 
+  api.add_files([
+    'lib/routes.js',
+  ], ['client', 'server']);
 
-  api.addFiles(['lib/client/templates/emails.html',
+  api.add_files(['lib/client/templates/emails.html',
     'lib/client/stylesheets/emails.css'
     ], ['client']);
-  api.addFiles(['lib/clients/templates/emails.js',
+  api.add_files(['lib/clients/templates/emails.js',
     ], ['client', 'server']);
 
 });
