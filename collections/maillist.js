@@ -34,4 +34,11 @@ MailList.allow({
 
 Meteor.addToMailList = function(email){
   MailList.insert({email:email, date:Date.now()});
+  Router.go('atSignUp')
+  document.getElementsByClassName('newsletter-banner')[0].style.display = 'none';
+  
+}
+
+Meteor.getMails = function(){
+  return MailList.find({});
 }

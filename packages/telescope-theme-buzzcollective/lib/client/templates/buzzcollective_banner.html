@@ -1,4 +1,5 @@
 <template name="buzzcollectiveBanner">
+    {{#unless isLoggedIn}}
     <div class="newsletter-banner module grid">
       <form>
         <h4 class="newsletter-tagline">Get the best new tracks in your inbox every week!</h4>
@@ -8,4 +9,5 @@
       <h4 class="newsletter-subscribed">Thanks for subscribing!</h4>
       <a href="#" class="newsletter-dismiss">×</a>
     </div>
+    {{/unless}}
  </template>
